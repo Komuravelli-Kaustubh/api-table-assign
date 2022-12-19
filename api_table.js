@@ -16,7 +16,7 @@
      
 //  })
 
-var g = " Employee with salary more than 5,00,000 is: ";
+var g = " Employee with salary more than 50,000 is: ";
 var ng="Employee who joined in december is: ";
 
 fetch("https://rawcdn.githack.com/kmitprojectschool/sem12022/788c820e40a750fecb30433c8d346457b7859abc/employee.json")
@@ -35,7 +35,7 @@ fetch("https://rawcdn.githack.com/kmitprojectschool/sem12022/788c820e40a750fecb3
             temp += "<td>" + obj.DateOfJoining + "</td></tr>";
             document.querySelector("#Employees").innerHTML = temp;
 
-            if(obj.Salary >500000){
+            if(obj.Salary >50000){
                 g+=obj.Name;
                 document.querySelector('#first').innerHTML=g;
                 g+=" ";
